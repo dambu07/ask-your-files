@@ -2,5 +2,4 @@ streamlit
 google-generativeai
 python-dotenv
 fitz
-PIL
 pymupdf
