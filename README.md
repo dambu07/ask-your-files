@@ -19,7 +19,7 @@
 - Handwritten notes are also uploadable and you will get the same desired output.
 
 ## Usage
-1. Visit the application [here]().
+1. Visit the application [here](https://note-extractor-generator.streamlit.app/).
 2. Upload an image/pdf on any topic.
 3. You can click on "Explore","questionnaire","formula" buttons, and also interact in the chatspace with any quesions related to the uploaded file.
 4. Wait for the AI to process the image and provide info.
