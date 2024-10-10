@@ -1,4 +1,4 @@
-# Smartscript
+# Ask Your Files
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@
 
 
 ## Description
-"Smartscript" is a Streamlit web application for identifying images using the Google Generative AI API. It provides informative summary, formula, questionnaire for uploaded images/pdf on any topic .
+"Ask your Files" is a Streamlit web application for identifying images using the Google Generative AI API. It provides informative summary, formula, questionnaire for uploaded images/pdf on any topic .
 
 ## Features
 - Upload images,pdf of any topic.
@@ -38,4 +38,4 @@ python
 streamlit run app.py
 ```
 
-### Developed with ❤ by Asmit,Bineet,Urshashi.
+### Developed with ❤ by Bloomi.
