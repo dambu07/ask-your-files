@@ -42,10 +42,26 @@ def input_img_setup(uploaded_file):
     else:
         raise FileNotFoundError("No File Uploaded")
 
-st.title(":red[Ask Your Files] ")
-st.header("Upload image or pdf of your notes")
-uploaded_files = st.file_uploader("Choose files", type=["jpg", "jpeg", "png", "webp", "pdf"], accept_multiple_files=True)
+###--- Title ---###
+# Use st.markdown with HTML content
+st.markdown("""
+    <h1 style='text-align: center;'>
+        <span style='color: #F81F6F;'>Ombre</span> 
+        <span style='color: #f5f8fc;'>AI Assistant</span>
+    </h1>
+""", unsafe_allow_html=True)
 
+# Again, use st.markdown for second header
+st.markdown("""
+    <h2 style='text-align: center;'>
+        <span style='color: #f5f8fc;'>Upload</span>
+        <span style='color: #F81F6F;'>Image or PDF</span> 
+        <span style='color: #f5f8fc;'>Of Your Notes</span>
+    </h2>
+""", unsafe_allow_html=True)
+
+# File uploader
+uploaded_files = st.file_uploader("Choose files", type=["jpg", "jpeg", "png", "webp", "pdf"], accept_multiple_files=True)
 if uploaded_files:
     all_responses = []
     for uploaded_file in uploaded_files:
@@ -137,29 +153,38 @@ if uploaded_files:
                     st.write(response)
                     st.info("Information provided may be inaccurate. Kindly consider double-checking the responses.")
 
-footer = """<style>
-a:link , a:visited{
-color: #FFFFFF;
-background-color: transparent;
-text-decoration: underline;
+footer = """
+<style>
+a:link, a:visited {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: underline;
 }
-a:hover,  a:active {
-color: #7AE7C7;
-background-color: transparent;
-text-decoration: underline;
+a:hover, a:active {
+    color: #7AE7C7;
+    background-color: transparent;
+    text-decoration: underline;
 }
 .footer {
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color:transparent;
-color: ##F5BF03;
-text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: ##F5BF03;
+    text-align: center;
 }
 </style>
 <div class="footer">
-<p>Developed with ❤ by Bloomi </p>
+    <h6 style='text-align: center;'>
+        <span style='color: #F81F6F;'>Developed with </span> 
+        <span style='color: #f5f8fc;'> ❤ by Raavi </span>
+    </h6>
 </div>
 """
+
+# Now, you can use this string in Streamlit's markdown
+import streamlit as st
 st.markdown(footer, unsafe_allow_html=True)
+
+
