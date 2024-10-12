@@ -45,19 +45,17 @@ def input_img_setup(uploaded_file):
 ###--- Title ---###
 # Use st.markdown with HTML content
 st.markdown("""
-    <h1 style='text-align: center;'>
-        <span style='color: #F81F6F;'>Ombre</span> 
-        <span style='color: #f5f8fc;'>AI Assistant</span>
-    </h1>
+    <h2 style='text-align: center;'> 
+        <span style='color: #F81F6F;'>Notes Extractor and Text Generator</span>
+    </h2>
 """, unsafe_allow_html=True)
 
 # Again, use st.markdown for second header
 st.markdown("""
-    <h2 style='text-align: center;'>
-        <span style='color: #f5f8fc;'>Upload</span>
-        <span style='color: #F81F6F;'>Image or PDF</span> 
-        <span style='color: #f5f8fc;'>Of Your Notes</span>
-    </h2>
+    <h4 style='text-align: center;'>
+        <span style='color: #f5f8fc;'>Upload Image or PDF</span>
+        <span style='color: #f5f8fc;'>of your notes</span>
+    </h4>
 """, unsafe_allow_html=True)
 
 # File uploader
@@ -176,10 +174,10 @@ a:hover, a:active {
 }
 </style>
 <div class="footer">
-    <h6 style='text-align: center;'>
-        <span style='color: #F81F6F;'>Developed with </span> 
-        <span style='color: #f5f8fc;'> ❤ by Raavi </span>
-    </h6>
+    <h8 style='text-align: center;'>
+        <span style='color: #f5f8fc;'>Developed by </span> 
+        <span style='color: #F81F6F;'> Raavi </span>
+    </h8>
 </div>
 """
 
@@ -188,3 +186,13 @@ import streamlit as st
 st.markdown(footer, unsafe_allow_html=True)
 
 
+#----------------------Hide Streamlit footer----------------------------
+hide_st_style = """
+<style>
+MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
+#--------------------------------------------------------------------
