@@ -106,10 +106,7 @@ if uploaded_files:
     prompt1 = "Summarize the extracted text from the uploaded file, image or document in a concise manner, highlighting the key points and main ideas. Ensure the summary is clear and easy to understand."
     prompt2 = "Extract the text from the uploaded file, image or document. Once the extraction is complete, provide a list of the topics mentioned in the file along with one-line descriptions for each in bullet format. After that, ask if I would like to convert the extracted text into another language. "
     prompt3 = "Analyze the extracted text from the uploaded file, image or document and generate a list of relevant questions based on the content. The questions should cover key concepts, important details, and any critical thinking prompts related to the material."
-<<<<<<< HEAD
 
-=======
->>>>>>> 5e76fd2bf70fb1e3c921d18935b2ec026e8efc69
 
     # Handle button clicks
     if submit1:
