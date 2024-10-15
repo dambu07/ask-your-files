@@ -96,14 +96,14 @@ if uploaded_files:
             st.info("Information provided may be inaccurate. Kindly consider double-checking the responses.")
 
     # Other buttons and functionality remain the same
-    res = st.button("Explore Topics")
-    submit = st.button("Generate Questionnaire")
-    submit1 = st.button("Collect Formulas")
+    res = st.button("Summarize It")
+    submit = st.button("Extract Text")
+    submit1 = st.button("Raise Questions")
 
     # Define your prompts
-    prompt1 = "Make a short quiz out of the image along with their answers including short explanation and formulas"
-    prompt2 = "List out the topics in the image and write one line descriptions for them in bullet format. After completing, provide study material websites for reference for the listed topics"
-    prompt3 = "List out only the formulas in the image without any explanation or any description"
+    prompt1 = "Summarize the extracted text from the uploaded file, image or document in a concise manner, highlighting the key points and main ideas. Ensure the summary is clear and easy to understand."
+    prompt2 = "Extract the text from the uploaded file, image or document. Once the extraction is complete, provide a list of the topics mentioned in the file along with one-line descriptions for each in bullet format. After that, ask if I would like to convert the extracted text into another language. "
+    prompt3 = "Analyze the extracted text from the uploaded file, image or document and generate a list of relevant questions based on the content. The questions should cover key concepts, important details, and any critical thinking prompts related to the material."
 
     # Handle button clicks
     if submit1:
