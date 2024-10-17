@@ -154,39 +154,39 @@ if uploaded_files:
                     st.write(response)
                     st.info("Information provided may be inaccurate. Kindly consider double-checking the responses.")
 
-footer = """
-<style>
-a:link, a:visited {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: underline;
-}
-a:hover, a:active {
-    color: #7AE7C7;
-    background-color: transparent;
-    text-decoration: underline;
-}
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: transparent;
-    color: ##F5BF03;
-    text-align: center;
-}
-</style>
-<div class="footer">
-    <h8 style='text-align: center;'>
-        <span style='color: #f5f8fc;'>Developed by </span> 
-        <span style='color: #F81F6F;'> Raavi </span>
-    </h8>
-</div>
-"""
+# footer = """
+# <style>
+# a:link, a:visited {
+#     color: #FFFFFF;
+#     background-color: transparent;
+#     text-decoration: underline;
+# }
+# a:hover, a:active {
+#     color: #7AE7C7;
+#     background-color: transparent;
+#     text-decoration: underline;
+# }
+# .footer {
+#     position: fixed;
+#     left: 0;
+#     bottom: 0;
+#     width: 100%;
+#     background-color: transparent;
+#     color: ##F5BF03;
+#     text-align: center;
+# }
+# </style>
+# <div class="footer">
+#     <h8 style='text-align: center;'>
+#         <span style='color: #f5f8fc;'>Developed by </span> 
+#         <span style='color: #F81F6F;'> Raavi </span>
+#     </h8>
+# </div>
+# """
 
-# Now, you can use this string in Streamlit's markdown
-import streamlit as st
-st.markdown(footer, unsafe_allow_html=True)
+# # Now, you can use this string in Streamlit's markdown
+# import streamlit as st
+# st.markdown(footer, unsafe_allow_html=True)
 
 
 #----------------------Hide Streamlit footer----------------------------
